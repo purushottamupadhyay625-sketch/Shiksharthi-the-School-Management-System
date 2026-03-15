@@ -4,7 +4,7 @@
 
 <head>
   <link rel="stylesheet" href="/assets/css/style.css">
-  <title> School Management System</title>
+  <title>Shiksharthi</title>
 
 
 
@@ -12,16 +12,14 @@
   <header class="header">
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/includes/header.php"; ?>
   </header>
-  <section class="main">
-    <aside>
+  <section>
+   <aside class="aside">
       <?php include $_SERVER['DOCUMENT_ROOT'] . "/includes/aside.php"; ?>
-    </aside>
-
+   </aside>
   </section>
   <main>
     <h1> Home Page </h1>
-    <
-      </main>
+  </main>
 </body>
 </head>
 

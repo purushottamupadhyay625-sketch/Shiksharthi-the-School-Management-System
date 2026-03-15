@@ -4,35 +4,35 @@
 }
 
 .grid-container {
-  display: flex;
-  grid-template-rows: 2fr;
-  grid-template-columns: repeart(1fr 4fr);
+  display: gride;
+  grid-template-rows:  1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   gap: 0px;
 
 }
 
 .header {
-  background-color: rgb(30, 170, 221);
-  text-align: center;
+  background-color:rgb(238, 244, 250);
+  text-align: lift;
   color: rgb(31, 17, 218);
   font-style: type new roman;
-  padding: 40px;
+  padding: 30px;
   /* height: 10px; */
   margin: 0px;
 }
 
-.nav {
+.aside {
   background-color: #000000;
 }
 
-.nav ul {
+.aside ul {
   padding: 5px;
   margin: 0px;
   display: flex;
   gap: 40px;
 }
 
-.nav a {
+.aside a {
   text-decoration: none;
   color: white;
 }
