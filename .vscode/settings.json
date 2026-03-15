@@ -1,0 +1,4 @@
+{
+    "githubPullRequests.branchListTimeout": 5500,
+    "githubIssues.issueAvatarDisplay": "assignee"
+}
