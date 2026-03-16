@@ -1,2 +1,2 @@
-# School-Management-System-UI
-In this repository   we create SMS user  interface by coding and this is a collection of program  
+# Shiksharthi-School-Management-System-UI
+ welcome, In this repository  we create Shiksharthi the School Management System 
