@@ -13,10 +13,13 @@
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/includes/header.php"; ?>
   </header>
   <section>
-   <aside class="aside">
+   <aside class="aside" >
       <?php include $_SERVER['DOCUMENT_ROOT'] . "/includes/aside.php"; ?>
    </aside>
   </section>
+  <footer>
+    <?php include $_SERVER['DOCUMENT_ROOT']   . "/includes/footer.php"; ?>
+  </footer>
   <main>
     <h1> Home Page </h1>
   </main>

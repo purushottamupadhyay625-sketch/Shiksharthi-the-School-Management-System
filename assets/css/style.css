@@ -3,18 +3,25 @@
   margin: 0;
 }
 
-.grid-container {
-  display: gride;
-  grid-template-rows:  1fr 3fr;
-  grid-template-columns: 1fr 4fr;
-  gap: 0px;
+form{
+  background-color: rgba(42, 55, 231, 0.771);
+  border-radius: 5px;
+  width: 500px;
+  height: 350px;
+  padding: 40px;
 
 }
 
+input{
+  margin:5px ;
+  padding: 10px;
+  width: 250px;
+}
+
 .header {
-  background-color:rgb(238, 244, 250);
+  background-color:rgba(216, 220, 224, 0.929);
   text-align: lift;
-  color: rgb(31, 17, 218);
+  color: rgb(13, 91, 180);
   font-style: type new roman;
   padding: 30px;
   /* height: 10px; */
@@ -40,16 +47,14 @@
 .aside {
   grid-column: col-start 2 /span 3;
   grid-row: span 3/4;
-  background-color: antiquewhite;
+  background-color: rgba(26, 7, 102, 0.829);
+}
+
+footer{
+  background-color: #3b7fe0;
 }
 
 
-.label {
-  color: #0021f2;
-  font-size: medium;
-  gap: 0px;
-  margin: 0px;
-}
 
 p1 {
   text-align: right;
