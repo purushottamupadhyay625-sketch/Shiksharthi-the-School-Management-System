@@ -1,13 +1,19 @@
 <?php
-$REQUEST=$_SERVER['REQUEST_URI'];
+require __DIR__ . "/vendor/autoload.php";
 
-switch($REQUEST)
-{
+use Purushottam\SchoolManagementSystemUi\App\Controllers\AuthenticationController;
+
+$REQUEST = $_SERVER['REQUEST_URI'];
+
+switch ($REQUEST) {
   case "/":
-     include $_SERVER['DOCUMENT_ROOT']."/views/user/login.php";
-     break; 
-
-   case "/pages/home":
-     include $_SERVER['DOCUMENT_ROOT']."/views/user/home.php";
-     break;
+    include $_SERVER['DOCUMENT_ROOT'] . "/views/user/login.php";
+    break;
+  case "/user/authenticate":
+    $authenticationController = new AuthenticationController();
+    $authenticationController->authenticate();
+    break;
+  case "/dashboard":
+    include $_SERVER['DOCUMENT_ROOT'] . "/views/user/dashboard.php";
+    break;
 }
