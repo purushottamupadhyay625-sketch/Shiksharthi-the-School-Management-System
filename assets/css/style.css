@@ -4,18 +4,19 @@
 }
 
 form{
-  background-color: rgba(42, 55, 231, 0.771);
+  background-color: rgba(114, 131, 216, 0.673);
   border-radius: 5px;
   width: 500px;
   height: 350px;
   padding: 40px;
-
+  display:inline-block ;
 }
 
 input{
   margin:5px ;
   padding: 10px;
   width: 250px;
+  border-radius: 5px;
 }
 
 .header {
@@ -29,31 +30,25 @@ input{
 }
 
 .aside {
-  background-color: #000000;
-}
-
-.aside ul {
-  padding: 5px;
+      grid-template-columns:3fr 4fr ;
+      display: inline-grid;
+      background-color: aqua;
+        width: 200px;
+        height: 500;
+      }
+.container ul {
+  padding: 10px;
   margin: 0px;
-  display: flex;
-  gap: 40px;
+  display: inline-grid;
+  gap:10px;
 }
 
-.aside a {
-  text-decoration: none;
-  color: white;
-}
-
-.aside {
-  grid-column: col-start 2 /span 3;
-  grid-row: span 3/4;
-  background-color: rgba(26, 7, 102, 0.829);
-}
-
-footer{
+.footer{
   background-color: #3b7fe0;
 }
-
+main{
+  margin: 80px;
+}
 
 
 p1 {

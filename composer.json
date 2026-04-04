@@ -1,0 +1,17 @@
+{
+    "name": "Purushottam/school-management-system-ui",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Purushottam\\SchoolManagementSystemUi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Purushottam Upadhyay",
+            "email": "purushottamupadhyay625@gmail.com"
+        }
+    ],
+    "require": {}
+}
