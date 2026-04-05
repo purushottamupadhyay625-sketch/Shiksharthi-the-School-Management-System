@@ -1,2 +1,3 @@
-<h1> Shiksharthi </h1>
-<p1> The School Management System </p1>
+<link rel="stylesheet" href="/assets/css/style.css">
+<h3> Shiksharthi </h3>
+<p> The School Management System </p>

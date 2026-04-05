@@ -1,64 +1,104 @@
 * {
-  box-sizing: border-box;
   margin: 0;
-}
-
-form{
-  background-color: rgba(114, 131, 216, 0.673);
-  border-radius: 5px;
-  width: 500px;
-  height: 350px;
-  padding: 40px;
-  display:inline-block ;
-}
-
-input{
-  margin:5px ;
-  padding: 10px;
-  width: 250px;
-  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
-  background-color:rgba(216, 220, 224, 0.929);
-  text-align: lift;
-  color: rgb(13, 91, 180);
-  font-style: type new roman;
-  padding: 30px;
-  /* height: 10px; */
-  margin: 0px;
-}
-
-.aside {
-      grid-template-columns:3fr 4fr ;
-      display: inline-grid;
-      background-color: aqua;
-        width: 200px;
-        height: 500;
-      }
-.container ul {
   padding: 10px;
-  margin: 0px;
-  display: inline-grid;
-  gap:10px;
+  border: 1px gray solid;
+  background-color: whitesmoke;
 }
 
-.footer{
-  background-color: #3b7fe0;
-}
-main{
-  margin: 80px;
+.header p {
+  font-size: small;
 }
 
+.main {
+  display: grid;
+  grid-template-columns: 1fr repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
 
-p1 {
-  text-align: right;
+.nav {
+  display: flex;
+  flex-direction: column;
+  border: 1px gray solid;
+  border-radius: 5px;
   margin: 10px;
-  color: #000000;
-
+  padding: 10px;
 }
 
-p2 {
+.nav a {
+  text-decoration: none;
+  color: #0d6efd;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.page-title {
+  border: 1px gray solid;
+  width: 85vw;
+  padding: 5px;
+  border-radius: 5px;
   text-align: center;
-  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.main-content {}
+
+.index-table {
+  margin-top: 20px;
+  width: 85vw;
+  border-collapse: collapse;
+}
+
+.index-table th {
+  background-color: gray;
+  padding: 5px;
+  color: white;
+  font-size: small;
+}
+
+.index-table td {
+  font-size: small;
+}
+
+.index-table tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.button {
+  color: white;
+  background-color: #0d6efd;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: small;
+}
+
+.form-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-col-2 label {
+
+}
+
+.form-col-2 input {
+  display: block;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  width: 80%;
+}
+
+.form-col-2 button {
+  padding: 10px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }

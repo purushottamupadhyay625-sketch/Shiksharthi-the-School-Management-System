@@ -1,7 +1,7 @@
-<div class="container" >
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="/views/leads/enquiry.php">Leads</a><li>
-        <li><a herf="#">Fee Record</a></li>
-     </ul>
-</div>
+<nav class="nav">
+    <a href="/dashboard">Dashboard</a>
+    <a href="/leads">Leads</a>
+    <a href="/enrollment">Enrollment</a>
+    <a href="/fees">Fees</a>
+    <a href="/reports" style="border: none;">Reports</a>
+</nav>
