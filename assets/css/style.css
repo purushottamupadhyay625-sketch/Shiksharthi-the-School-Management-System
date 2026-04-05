@@ -9,6 +9,10 @@
   background-color: whitesmoke;
 }
 
+.header p {
+  font-size: small;
+}
+
 .main {
   display: grid;
   grid-template-columns: 1fr repeat(5, 1fr);
@@ -28,9 +32,73 @@
 .nav a {
   text-decoration: none;
   color: #0d6efd;
+  padding: 5px;
+  border-bottom: 1px solid gray;
 }
 
-.main-content {
+.page-title {
+  border: 1px gray solid;
+  width: 85vw;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-content {}
+
+.index-table {
+  margin-top: 20px;
+  width: 85vw;
+  border-collapse: collapse;
+}
+
+.index-table th {
+  background-color: gray;
+  padding: 5px;
+  color: white;
+  font-size: small;
+}
+
+.index-table td {
+  font-size: small;
+}
+
+.index-table tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.button {
+  color: white;
+  background-color: #0d6efd;
+  border-radius: 5px;
+  text-decoration: none;
   padding: 10px;
-  margin: 10px;
+  font-size: small;
+}
+
+.form-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-col-2 label {
+
+}
+
+.form-col-2 input {
+  display: block;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  width: 80%;
+}
+
+.form-col-2 button {
+  padding: 10px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
