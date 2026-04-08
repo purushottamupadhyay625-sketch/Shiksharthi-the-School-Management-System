@@ -1,3 +1,12 @@
+<?php
+
+use Purushottam\SchoolManagementSystemUi\App\Controllers\LeadsController;
+
+$leadsController = new LeadsController();
+$leads = $leadsController->getAll();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,18 +29,30 @@
       <a href="/leads/new" class="button">New Lead</a>
       <table class="index-table">
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Gender</th>
-                <th>Date of Birth</th>
-                <th>Class</th>
-                <th>Contact Number</th>
-                <th>Email</th>
-            </tr>
+          <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Date of Birth</th>
+            <th>Class</th>
+            <th>Contact Number</th>
+            <th>Email</th>
+          </tr>
         </thead>
         <tbody>
-
+          <?php foreach ($leads as $lead) { ?>
+          <tr>
+            <td><?= $lead['id'] ?></td>
+            <td><?= $lead['fname'] ?></td>
+            <td><?= $lead['lname'] ?></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <?php } ?>
         </tbody>
       </table>
     </div>

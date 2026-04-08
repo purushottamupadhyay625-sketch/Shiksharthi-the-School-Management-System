@@ -19,10 +19,10 @@
             <h4 class="page-title">New Lead</h4>
             <form action="/leads/create" method="post" class="form-col-2">
                 <div>
-                    <label for="first_name">Fist Name</label>
-                    <input type="text" name="first_name" id="first_name">
-                    <label for="last_name">Last Name</label>
-                    <input type="text" name="last_name" id="last_name">
+                    <label for="fname">Fist Name</label>
+                    <input type="text" name="fname" id="fname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname">
 
                     <button>Submit</button>
                 </div>
