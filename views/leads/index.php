@@ -1,3 +1,11 @@
+<?php
+
+use Purushottam\SchoolManagementSystemUi\App\Controllers\LeadsController;
+$leadsController = new LeadsController();
+$leads = $leadsController->getAll();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +30,9 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Name</th>
+                <th>Frist_name</th>
+                <th>last_name</th>
+
                 <th>Gender</th>
                 <th>Date of Birth</th>
                 <th>Class</th>
@@ -31,7 +41,18 @@
             </tr>
         </thead>
         <tbody>
-
+          <?php foreach($leads as $lead) { ?>
+          <tr>
+            <td><?= $lead['id'] ?></td>
+            <td><?= $lead['fname'] ?></td>
+            <td><?= $lead['lname'] ?></td>
+            <td><?= $lead['gender'] ?></td>
+            <td><?= $lead['date_of_birth'] ?></td>
+            <td><?= $lead['class'] ?></td>
+            <td><?= $lead['contact_no'] ?></td>
+            <td><?= $lead['email'] ?></td>
+          </tr>
+          <?php } ?>
         </tbody>
       </table>
     </div>

@@ -4,17 +4,21 @@ CREATE DATABASE ShiksharthiSMS_01;
     id Int AUTO_INCREMENT PRIMARY KEY,
     fname VARCHAR(50) NOT NULL,
     lname VARCHAR(50) NOT NULL,
-    contact_NO CHAR(15)    
+    gender CHAR(1),
+    date_of_birth DATE,
+    age INT NOT NULL,
+    class VARCHAR(10),
+    father_name VARCHAR(50),
+    mother_name VARCHAR(50),
+    email VARCHAR(50),
+    contact_no CHAR(15)
  );
   CREATE TABLE Admin(
  id INT AUTO_INCREMENT PRIMARY KEY,
  Fname VARCHAR(50)NOT NULL,
  Lname VARCHAR(50)NOT NULL,
  password VARCHAR(100)NOT NULL,
- leads_id INT NOT NULL,
- fee_id INT NOT NULL,
- Staff_id INT NOT NULL,
- FOREIGN KEY(leads_id) REFERENCES leads(id)
+ Staff_id INT NOT NULL
  );
 
  CREATE TABLE Student(
@@ -28,18 +32,14 @@ CREATE DATABASE ShiksharthiSMS_01;
     State VARCHAR(40) NOT NULL,
     city VARCHAR(40) NOT NULL,
     strate VARCHAR(45) NOT NULL,
-    pin INT(6) NOT NULL,
-    admin_id INT NOT NULL,
-    FOREIGN KEY (admin_id) REFERENCES admin(id)
+    pin INT(6) NOT NULL
  );
  CREATE TABLE enrollment(
     id INT AUTO_INCREMENT PRIMARY KEY,
     date DATE NOT NULL,
     class INT NOT NULL,
     Student_id INT NOT NULL UNIQUE,
-    admin_id INT NOT NULL,
-    FOREIGN KEY(Student_id) REFERENCES Student(id),
-    FOREIGN KEY(admin_id) REFERENCES admin(id)
+    admin_id INT
 );
  
 
