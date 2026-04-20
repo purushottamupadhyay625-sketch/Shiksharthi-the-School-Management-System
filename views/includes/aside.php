@@ -3,5 +3,6 @@
     <a href="/leads">Leads</a>
     <a href="/enrollment">Enrollment</a>
     <a href="/fees">Fees</a>
-    <a href="/reports" style="border: none;">Reports</a>
+    <a href="/reports" >Reports</a>
+    <a href="/settings">Settings</a>
 </nav>
