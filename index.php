@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . "/vendor/autoload.php";
 
+use Purushottam\SchoolManagementSystemUi\App\Controllers\EnrollmentController;
 use Purushottam\SchoolManagementSystemUi\App\Controllers\AuthenticationController;
 use Purushottam\SchoolManagementSystemUi\App\Controllers\LeadsController;
 
@@ -27,6 +28,16 @@ switch ($REQUEST) {
     $leadsController = new LeadsController();
     $leadsController->create();
     break;
+  case "/enrollment":
+     include $_SERVER['DOCUMENT_ROOT']."/views/enrollment/index.php";
+     break;
+   case "/enrollment/new":
+     include $_SERVER['DOCUMENT_ROOT']."/views/enrollment/new.php";
+     break;
+  case "/enrollment/create":
+        $enrollmentController = new EnrollmentController();
+        $enrollmentController->Create();
+        break;
   default:
     echo "Page not found!";
 }

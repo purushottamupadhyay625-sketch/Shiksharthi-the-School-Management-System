@@ -17,7 +17,7 @@
         
             </div>
             <div class="right">
-                <form action="/user/authenticate" method="POST">
+                <form action="/user/authenticate" method="POST" class="Login">
                     <h2>Login to your account</h2>
                     <label for="Uname">User Name </label>
                     <input type="text" id="Uname" name="user name"><br>

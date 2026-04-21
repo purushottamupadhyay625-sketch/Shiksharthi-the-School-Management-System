@@ -22,25 +22,33 @@ CREATE DATABASE ShiksharthiSMS_01;
  );
 
  CREATE TABLE Student(
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    fname VARCHAR(50) NOT NULL,
-    lname VARCHAR(50) NOT NULL,
+    enrollment_no INT AUTO_INCREMENT PRIMARY KEY,
+    enrollment_date DATE NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
     DOB DATE NOT NULL,
     Gender VARCHAR(3),
-    Mother_name VARCHAR(50) NOT NULL,
-    father_name VARCHAR(45) NOT NULL,
-    State VARCHAR(40) NOT NULL,
-    city VARCHAR(40) NOT NULL,
-    strate VARCHAR(45) NOT NULL,
-    pin INT(6) NOT NULL
- );
- CREATE TABLE enrollment(
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    date DATE NOT NULL,
-    class INT NOT NULL,
-    Student_id INT NOT NULL UNIQUE,
-    admin_id INT
-);
+    Mother_name VARCHAR(50),
+    father_name VARCHAR(45),
+    occupation VARCHAR(70),
+    connect_number VARCHAR(15),
+    State VARCHAR(40),
+    city VARCHAR(40),
+    strate VARCHAR(45),
+    pin CHAR(6),
+    email VARCHAR(50),
+    password VARCHAR(100),
+    class VARCHAR(1),
+    section VARCHAR(30),
+    roll_no VARCHAR(50),
+    session CHAR(10),
+    previous_schoolname VARCHAR(70),
+    previous_class VARCHAR(15),
+    guardian VARCHAR(1),
+    guardian_name VARCHAR(50),
+    guardian_relation VARCHAR(2),
+    guardian_email VARCHAR(50)
+   );
  
 
  CREATE TABLE Staff(

@@ -31,9 +31,17 @@ class LeadsController
     {
         $fname =$_POST['first_name'];
         $lname =$_POST['last_name'];
+        $gender =$_POST['gender'];
         $date_of_birth =$_POST[ 'date_of_birth'];
+        $age =$_POST['age'];
+        $class =$_POST['class'];
+        $father_name =$_POST['father_name'];
+        $mother_name =$_POST['mother_name'];
+        $email =$_POST['email'];
+        $contact_no =$_POST['contact_no'];
 
-        $sql="INSERT INTO leads(fname, lname, date_of_birth, age) VALUES('$fname',' $lname', '$date_of_birth',  TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()))";
+
+        $sql="INSERT INTO leads(fname, lname, gender, date_of_birth, age, class, father_name, mother_name, email, contact_no) VALUES('$fname',' $lname', '$gender', '$date_of_birth',  '$age', '$class', '$father_name','$mother_name', '$email', '$contact_no' )";
         $this->connection->query($sql);
         header('location:/leads');
 
